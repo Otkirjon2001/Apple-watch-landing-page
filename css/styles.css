@@ -13,22 +13,39 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
   font-style: 16px;
   line-height: 1.5;
   background-color: #fff;
-  color: #000;
+  color: #777;
 }
 img{
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
+a{
+  text-decoration: none;
+}
+.button{
+  display: inline-block;
+  padding: 12px 39px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 150%;
+  color: #fff;
+  background-color: #EA625C;
+  text-transform: uppercase;
+}
 
 /* CONTAINER  */
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   padding-right: 50px;
   padding-left: 50px;
   margin-right: auto;
@@ -38,4 +55,28 @@ img{
 /* MAIN CONTENT  */
 .main-content{
   flex-grow: 1;
+}
+
+/* HEADER  */
+.site-header {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.container {
+}
+.header-container {
+}
+.site-logo-link {
+  display: inline-block;
+
+}
+.site-logo-img {
+}
+.site-nav {
+}
+.site-nav-item {
+}
+.site-nav-item-link {
+}
+.aid-department {
 }
