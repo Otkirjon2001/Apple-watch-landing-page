@@ -23,7 +23,7 @@ body{
 }
 img{
   max-width: 100%;
-  /* height: auto; */
+  height: auto;
   object-fit: cover;
 }
 a{
@@ -38,10 +38,13 @@ a{
   color: #fff;
   background-color: #EA625C;
   text-transform: uppercase;
-  transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease, opacity 0.4s ease;
+}
+.button:hover{
+  background-color:#C9514C;
 }
 .button:active{
-  background-color:#C9514C;
+  opacity: 0.8;
 }
 
 /* CONTAINER  */
@@ -87,9 +90,18 @@ a{
   margin-right: 30px;
 }
 .site-nav-item-link {
+  padding-bottom: 6px;
   font-size: 15px;
   line-height: 150%;
   color: #333;
+  border-bottom: 3px solid #fff;
+  transition: border-bottom 0.4s ease, opacity 0.4s ease ;
+}
+.site-nav-item-link:hover{
+  border-bottom:3px solid #333;
+}
+.site-nav-item-link:active{
+  opacity: 0.6;
 }
 .aid-department {
   width: 153px;
@@ -104,11 +116,11 @@ a{
 /* INTRO */
 .intro {
   height: 565px;
-  border-bottom: 2px solid #ddd;
-  background-image: url("../imgs/intro-bg.svg");
+  background-image: url("../imgs/intro-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom ;
+  border-bottom: 2px solid #ddd;
 }
 .intro-container{
   display: flex;
@@ -221,4 +233,20 @@ a{
 }
 .take-control .site-content-text{
   border-color: #fff;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .intro{
+    background-image: url("../imgs/intro-bg@2x.png");
+  }
+  .take-control{
+  background-image: url("../imgs/runners@2x.jpg");
+  }
+
 }
