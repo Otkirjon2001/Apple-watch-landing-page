@@ -18,14 +18,12 @@ body{
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  font-style: 16px;
-  line-height: 1.5;
   background-color: #fff;
   color: #777;
 }
 img{
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
   object-fit: cover;
 }
 a{
@@ -40,6 +38,10 @@ a{
   color: #fff;
   background-color: #EA625C;
   text-transform: uppercase;
+  transition: background-color 0.4s ease;
+}
+.button:active{
+  background-color:#C9514C;
 }
 
 /* CONTAINER  */
@@ -62,21 +64,161 @@ a{
   margin-top: 30px;
   margin-bottom: 80px;
 }
-.container {
-}
 .header-container {
+  display: flex;
+  align-items: center;
 }
 .site-logo-link {
-  display: inline-block;
-
+  display: flex;
+  margin-right: auto;
 }
 .site-logo-img {
+  width: 35px;
+  height: 42px;
 }
 .site-nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+  list-style: none;
 }
-.site-nav-item {
+.site-nav-item:not(:last-child) {
+  margin-right: 30px;
 }
 .site-nav-item-link {
+  font-size: 15px;
+  line-height: 150%;
+  color: #333;
 }
 .aid-department {
+  width: 153px;
+  padding-bottom: 6px;
+  font-size: 15px;
+  line-height: 150%;
+  border: 0;
+  border-bottom: 1px solid #333;
+  color: #666;
+}
+
+/* INTRO */
+.intro {
+  height: 565px;
+  border-bottom: 2px solid #ddd;
+  background-image: url("../imgs/intro-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom ;
+}
+.intro-container{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.site-content {
+  width: 490px;
+}
+.site-content-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 120%;
+  color: #000;
+}
+.site-content-text {
+  margin: 0 0 30px 0;
+  padding-left: 40px;
+  border-left: 3px solid #888;
+}
+
+/* FEATURES  */
+.features {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.features-container {
+  display: flex;
+}
+.features-box {
+  width: 280px;
+}
+.features-box:not(:last-child){
+  margin-right: 80px;
+}
+.features-heading {
+  margin: 0 0 30px 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  color: #222222;
+  text-transform: uppercase;
+}
+.features-text {
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  line-height: 160%;
+  color: #333333;
+}
+.dots-devider {
+  display: flex;
+}
+.dots-devider-item {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ddd;
+}
+.dots-devider-item:not(:last-child){
+  margin-right: 10px;
+}
+.features-button-box {
+  display: flex;
+  align-items: center;
+}
+.features-button-hr {
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: #EA625C;
+}
+.features-button {
+  font-weight: bold;
+  line-height: 160%;
+  color: #EA625C;
+  text-transform: uppercase;
+}
+
+/* INFO  */
+.info {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* TAKE CONTROL  */
+.take-control {
+  height: 830px;
+  background-image: url("../imgs/runners.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.take-control *{
+  color: #fff;
+}
+.take-control-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.take-control .site-content-text{
+  border-color: #fff;
 }
