@@ -258,7 +258,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .intro{
-    background-image: url("../imgs/intro-bg@2x.png");
+    background-image: url("../imgs/intro-bg@2x.jpg");
   }
   .take-control{
   background-image: url("../imgs/runners@2x.jpg");
