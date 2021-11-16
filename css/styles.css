@@ -26,12 +26,18 @@ img{
   height: auto;
   object-fit: cover;
 }
+*:focus{
+  outline: 2px dashed #C9514C;
+  outline-offset: 2px;
+}
 a{
   text-decoration: none;
 }
 .button{
   display: inline-block;
   padding: 12px 39px;
+  min-width: 260px;
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
   line-height: 150%;
@@ -90,7 +96,8 @@ a{
   margin-right: 30px;
 }
 .site-nav-item-link {
-  padding-bottom: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   font-size: 15px;
   line-height: 150%;
   color: #333;
@@ -105,8 +112,10 @@ a{
 }
 .aid-department {
   width: 153px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   font-size: 15px;
+  font-style: normal;
   line-height: 150%;
   border: 0;
   border-bottom: 1px solid #333;
@@ -116,10 +125,10 @@ a{
 /* INTRO */
 .intro {
   height: 565px;
-  background-image: url("../imgs/intro-bg.png");
+  background-image: url("../imgs/intro-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right bottom ;
+  background-position: left calc(50% + 550px) bottom ;
   border-bottom: 2px solid #ddd;
 }
 .intro-container{
@@ -140,7 +149,7 @@ a{
 }
 .site-content-text {
   margin: 0 0 30px 0;
-  padding-left: 40px;
+  padding-left: 37px;
   border-left: 3px solid #888;
 }
 
@@ -184,22 +193,27 @@ a{
 .dots-devider-item:not(:last-child){
   margin-right: 10px;
 }
-.features-button-box {
+.features-button {
   display: flex;
   align-items: center;
-}
-.features-button-hr {
-  display: block;
-  width: 40px;
-  height: 3px;
-  margin-right: 10px;
-  background-color: #EA625C;
-}
-.features-button {
   font-weight: bold;
   line-height: 160%;
   color: #EA625C;
   text-transform: uppercase;
+}
+.features-button::before{
+  content: "";
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: #EA625C;
+  transition: width 0.4s ease, opacity 0.4s ease;
+}
+.features-button:hover::before{
+  width: 60px;
+}
+.features-button:active{
+  opacity: 0.8;
 }
 
 /* INFO  */
@@ -220,6 +234,7 @@ a{
   background-image: url("../imgs/runners.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center center;
 }
 .take-control *{
