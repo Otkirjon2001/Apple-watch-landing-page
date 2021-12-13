@@ -246,16 +246,22 @@ a{
 }
 
 /* TAKE CONTROL  */
-.take-control {
+.take-control{
+  display: flex;
+  justify-content: center;
+}
+.take-control *{
+  color: #fff;
+}
+.take-control-wrapper{
+  width: 100%;
+  max-width: 1250px;
   height: 830px;
   background-image: url("../imgs/runners.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-}
-.take-control *{
-  color: #fff;
 }
 .take-control-container {
   display: flex;
