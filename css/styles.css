@@ -191,6 +191,8 @@ a{
   align-items: center;
   height: 100%;
 }
+
+/* SITE-CONTENT */
 .site-content {
   max-width: 490px;
   width: 100%;
@@ -209,21 +211,35 @@ a{
   border-left: 3px solid #888;
 }
 
+
 /* FEATURES  */
 .features {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
-.features-container {
+.features__container {
   display: flex;
 }
-.features-box {
-  width: 280px;
+.features__list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.features-box:not(:last-child){
+.features__item:not(:last-child){
   margin-right: 80px;
 }
-.features-heading {
+.features__item{
+  margin-bottom: 30px;
+}
+
+/* FEATURE */
+.feature {
+  max-width: 280px;
+  width: 100%;
+}
+.feature__heading {
   margin: 0 0 30px 0;
   font-weight: bold;
   font-size: 18px;
@@ -231,25 +247,13 @@ a{
   color: #222222;
   text-transform: uppercase;
 }
-.features-text {
+.feature__text {
   margin: 0 0 20px 0;
   font-size: 15px;
   line-height: 160%;
   color: var(--font-color);
 }
-.dots-devider {
-  display: flex;
-}
-.dots-devider-item {
-  display: block;
-  width: 8px;
-  height: 8px;
-  background-color: #ddd;
-}
-.dots-devider-item:not(:last-child){
-  margin-right: 10px;
-}
-.features-button {
+.feature__button {
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -258,7 +262,7 @@ a{
   text-transform: uppercase;
   transition: opacity 0.4s ease;
 }
-.features-button::before{
+.feature__button::before{
   content: "";
   width: 40px;
   height: 3px;
@@ -266,12 +270,27 @@ a{
   background-color:  var(--primary-color);
   transition: width 0.4s ease, opacity 0.4s ease;
 }
-.features-button:hover::before{
+.feature__button:hover::before{
   width: 60px;
 }
-.features-button:active{
+.feature__button:active{
   opacity: 0.8;
 }
+
+/* DOTS-DEVIDER */
+.dots-devider {
+  display: flex;
+}
+.dots-devider__item {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ddd;
+}
+.dots-devider__item:not(:last-child){
+  margin-right: 10px;
+}
+
 
 /* INFO  */
 .info {
