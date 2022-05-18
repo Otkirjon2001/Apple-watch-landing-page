@@ -311,11 +311,12 @@ a{
 .take-control{
   display: flex;
   justify-content: center;
+  color: var(--primary-font-color);
 }
 .take-control *{
   color: var(--primary-font-color);
 }
-.take-control-wrapper{
+.take-control__wrapper{
   max-width: 1250px;
   width: 100%;
   height: 830px;
@@ -325,13 +326,13 @@ a{
   background-attachment: fixed;
   background-position: center center;
 }
-.take-control-container {
+.take-control__container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 100%;
 }
-.take-control-content-text{
+.site-content__text--white{
   border-color: var(--primary-font-color);
 }
 
