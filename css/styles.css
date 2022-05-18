@@ -297,10 +297,14 @@ a{
   padding-top: 70px;
   padding-bottom: 70px;
 }
-.info-container {
+.info__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.info__img{
+  width: 400px;
+  height: 600px;
 }
 
 /* TAKE CONTROL  */
